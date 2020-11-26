@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Future Car</title>
+</head>
+<body>
+  
+    <a-scene>
+        <a-assets>
+            <a-assets-items id="car" src="assets/FutureCar/Future-Car.gltf"></a-assets-items>
+            
+        </a-assets>
+      
+        <a-entity gltf-model="#car" scale="0.5 0.5 0.5" position="0 0.5 -3" rotation = "0 45 0"></a-entity>
+       
+        <a-text font="kelsonsans" color="black" value="Futuristic Vehicle" width="6" position="-2.5 2.25 -2.5"
+              rotation="0 15 0"></a-text>
+        <a-text font="kelsonsans" color="black" value="Press WASD to walk" width="3" position="1 3 -2.5" rotation="0 -15 0"></a-text>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="pink"></a-plane>
+
+        <a-sky color="#87ceeb"></a-sky>
+    </a-scene>
+</body>
+</html>
